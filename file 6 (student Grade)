@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	float Sci_marks,Math_marks,Eng_marks,average;
+	printf("Enter first subject marks");
+	scanf("%f",&Sci_marks);
+	printf("Enter second subject marks");
+	scanf("%f",&Math_marks);
+	printf("Enter third subject marks");
+	scanf("%f",&Eng_marks);
+	average=(Sci_marks+Math_marks+
+	Eng_marks)/3;
+	printf("average%f",average);
+	if(average <50){
+	printf("student fail");}
+	if(average>75){
+	printf("student get 'A' grade");} 
+	 if(average >=50&& average <=75){
+	printf("student get 'B' garde ");}
+		return 0;
+}
+	

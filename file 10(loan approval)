@@ -1,0 +1,37 @@
+
+	#include <stdio.h>
+#include<conio.h>
+int main() 
+{
+    float monthlyIncome;
+    char existingLoan, overduePayments;   
+    printf("Enter your monthly income");
+    scanf("%f", &monthlyIncome);
+     if (monthlyIncome >= 30000) {
+        printf("Do you have any existing loan? (Y/N)");
+        scanf(" %c", &existingLoan);
+
+        if (existingLoan == 'Y' || existingLoan == 'y') {
+            printf("Do you have any overdue payments? (Y/N)");
+            scanf(" %c", &overduePayments);
+        if (overduePayments == 'Y' || overduePayments == 'y') {
+             printf("You are ineligible for loan due to overdue payments");
+            } 
+            else 
+            {
+              printf("You are eligible for loan");
+            }
+        }
+        else 
+        {
+            printf("You are ineligible for loan. Your monthly income is less than 30,000");
+        }
+    } 
+    else 
+    {
+        printf("You are eligible  for loan");
+    }
+
+    getch();
+
+}
