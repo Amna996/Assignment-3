@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	int age, weight;
+	printf("Enter the person age");
+	scanf("%d",&age);
+	printf("Enter the person weight");
+	scanf("%d",&weight);
+	if (age >=18 && age <=65){
+	printf("person is eligible to donate blood");
+	if (weight >=50 )
+	printf("person donate blood");}
+	else {
+	printf("person is not eligible to donate blood");}
+	return 0;
+	}
+	

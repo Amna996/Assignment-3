@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	float AccountBalance,WithdrawlAmount;
+	char permit;
+	printf("Enter AccountBalance");
+	scanf("%f",&AccountBalance);
+	printf("Enter WithdrawlAmount");
+	scanf("%f",&WithdrawlAmount);
+	if(AccountBalance>=WithdrawlAmount)
+	{
+		if(WithdrawlAmount>10000)
+	{
+	printf("Withdrawl Amount exceeds 10,000.Do you have special withdrawl permit?(Y/N)");
+	scanf("%c",&permit);
+	if(permit=='Y' || permit=='y')
+	{
+		printf("Withdrawl successful");
+		printf("Remaining balance %f",AccountBalance-WithdrawlAmount);
+	}
+	else
+	{
+		printf("Withdrawl denied.Special permit required");
+	}
+	}
+	else
+	{
+		printf("Withdrawl successful");
+		printf("Remaining balance %f",AccountBalance-WithdrawlAmount);
+	}
+	}
+	else
+	{
+		printf("Insufficient funds");
+	}
+	getch();
+}	

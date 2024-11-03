@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	float mathscore,sciencescore,totalscore;
+	printf("Enter mathscore");
+	scanf("%f",&mathscore);
+	printf("Enter sciencescore");
+	scanf("%f",&sciencescore);
+	totalscore=mathscore+sciencescore;
+	if (totalscore>=50){
+		printf("student is eligible");
+		if (totalscore>=80){
+		printf("student qualify for a schloarship");
+		}
+	}
+	else{
+	printf("student is not eligible");
+	}
+	return 0;
+}
+	
+	
